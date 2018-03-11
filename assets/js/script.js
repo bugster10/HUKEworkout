@@ -282,8 +282,9 @@ audio[5].src = 'sounds/ending.mp3';
 audio[6] = new Audio();
 audio[6].src = 'sounds/back.wav';
 
-audio[0].play();
-
+// setTimeout(function(){
+// audio[0].play();
+// }, 5000)
 
 for (var i = 0; i <= 2; i++) {
 	audio[i].addEventListener('ended', function() {

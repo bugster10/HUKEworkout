@@ -32,7 +32,7 @@
 
 <div class="container">
     <h1 class="text-center del-btn visible" id="introFirst">Welcome to HUKE's workout</h1>
-  <div class="text-center del-btn visible font-25" id="introSecond">This workout plan is currently only for kettlebell.<br> If you only have one kettlebell, just adjust the exercises a bit. Try to work out for 4 days each week.<br>At the least 2, at the most 6. Each day, alternate between workouts A and B. <br> (Do the SUPERSET immediately after your main set without resting.) <br> <br> <button onclick="unhide()" class="btn-primary btn-mybutton btn-lg font-60 floating">Ready to get HUKE?</button></div>
+  <div class="text-center del-btn font-25" id="introSecond">This workout plan is currently only for kettlebell.<br> If you only have one kettlebell, just adjust the exercises a bit. Try to work out for 4 days each week.<br>At the least 2, at the most 6. Each day, alternate between workouts A and B. <br> (Do the SUPERSET immediately after your main set without resting.) <br> <br> <button onclick="unhide(), audio[0].play()" class="btn-primary btn-mybutton btn-lg font-60 visible floating">Ready to get HUKE?</button></div>
   <div class="text-center" id="overviewFirst"></div>
   <br>
 	<div class="text-center" id="overviewSecond"></div>
@@ -92,7 +92,7 @@
           <img class="w3-animate-zoom" id="modalGIF2">
         </div>
         <div class="modal-footer text-center header-footer">
-        	<span id="modal-footer">As soon as you finish the main set, do the bottom SUPERSET. </>
+        	<span id="modal-footer">Immediately after finishing the main set, do the bottom SUPERSET. </>
         </div>
       </div>
 
