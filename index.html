@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
 <!-- STYLES CSS -->
 <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-	<title>workOut</title>
+  <title>workOut</title>
 </head>
 <body>
 
@@ -32,49 +32,55 @@
 
 <div class="container">
     <h1 class="text-center del-btn visible" id="introFirst">Welcome to HUKE's workout</h1>
-  <div class="text-center del-btn font-25" id="introSecond">This workout plan is currently only for kettlebell.<br> If you only have one kettlebell, just adjust the exercises a bit. Try to work out for 4 days each week.<br>At the least 2, at the most 6. Each day, alternate between workouts A and B. <br> (Do the SUPERSET immediately after your main set without resting.) <br> <br> <button onclick="unhide(), audio[0].play()" class="btn-primary btn-mybutton btn-lg font-60 visible floating">Ready to get HUKE?</button></div>
-  <div class="text-center" id="overviewFirst"></div>
-  <br>
-	<div class="text-center" id="overviewSecond"></div>
-	<div class="text-center" id="overviewThird"></div>
-	<div class="text-center" id="firstRoutine"></div>
-	<div class="text-center" id="secondRoutine"></div>
-	<div class="text-center" id="thirdRoutine"></div>
-	<div class="text-center" id="absRoutine"></div>
+    <div class="text-center del-btn font-25" id="introSecond">This workout plan is currently only for kettlebell.<br>
+        If you only have one kettlebell, just adjust the exercises a bit. Try to work out for 4 days each week.<br>
+        At the least 2, at the most 6. Each day, alternate between workouts A and B. <br>
+        (Do the SUPERSET immediately after your main set without resting.)<br>
+        <br>
+        <button onclick="unhide(), audio[0].play()" class="btn-primary btn-mybutton btn-lg font-60 visible floating">Ready to get HUKE?</button></div>
+    <div class="text-center" id="overviewFirst"></div>
+    <br>
+    <div class="text-center" id="overviewSecond"></div>
+    <div class="text-center" id="overviewThird"></div>
+    <div class="text-center" id="firstRoutine"></div>
+    <div class="text-center" id="secondRoutine"></div>
+    <div class="text-center" id="thirdRoutine"></div>
+    <div class="text-center" id="absRoutine"></div>
 </div>
 
-	<br>
-
-<div class="container">
-<div class="row">
-	<button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="chestButton">Start Chest</button>
-	<button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="shoulderButton">Start Shoulders</button>
-	<button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="legsButton">Start Legs</button>
-</div>
-</div>
+<br>
 
 <div class="container">
 <div class="row">
-	<button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="backButton">Start Back</button>
-	<button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="bicepButton">Start Biceps</button>
-	<button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="tricepButton">Start Triceps</button>
+  <button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="chestButton">Start Chest</button>
+  <button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="shoulderButton">Start Shoulders</button>
+  <button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="legsButton">Start Legs</button>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+  <button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="backButton">Start Back</button>
+  <button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="bicepButton">Start Biceps</button>
+  <button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="tricepButton">Start Triceps</button>
 </div>
 </div>
 
 <br>
 
 <div class="container">
-<button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="absButton">Start Abs</button>
+  <button onclick="selectBodyPart(this)" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="absButton">Start Abs</button>
 </div>
 
 <br>
+
 <div class="container">
-<button onclick="selectBodyPart(this), stopTimer()" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="finishedButton">Finish Workout!</button>
+  <button onclick="selectBodyPart(this), stopTimer()" data-toggle="modal" data-target="#workoutModal" class="hiddenButton" id="finishedButton">Finish Workout!</button>
 </div>
 
 <div class="del-btn button-div w3-animate-bottom">
-	<button class="del-btn dynamic-button btn-primary btn-lg floating float-left" onclick="mySchedule(this), timer();" id="workoutA">Start Workout A</button>
-	<button class="del-btn dynamic-button btn-primary btn-lg float-right floating" onclick="mySchedule(this), timer()" id="workoutB">Start Workout B</button>
+  <button class="del-btn dynamic-button btn-primary btn-lg floating float-left" onclick="mySchedule(this), timer();" id="workoutA">Start Workout A</button>
+  <button class="del-btn dynamic-button btn-primary btn-lg float-right floating" onclick="mySchedule(this), timer()" id="workoutB">Start Workout B</button>
 </div>
 </div>
 
@@ -86,15 +92,13 @@
       <div class="modal-content">
         <div>
         <div class="modal-header text-center header-footer">
-        	<span id="modal-header">
-        	The top exercise is the main set.
-        	</span>
+          <span id="modal-header"> The top exercise is the main set. </span>
         </div>
           <img class="w3-animate-zoom" id="modalGIF1">
           <img class="w3-animate-zoom" id="modalGIF2">
         </div>
         <div class="modal-footer text-center header-footer">
-        	<span id="modal-footer">Immediately after finishing the main set, do the bottom SUPERSET. </>
+          <span id="modal-footer">Immediately after finishing the main set, do the bottom SUPERSET. </>
         </div>
       </div>
 

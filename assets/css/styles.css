@@ -44,8 +44,8 @@
   transform-origin: 0 50%;
 }
 
-.ml11 .line1 { 
-  top: 0; 
+.ml11 .line1 {
+  top: 0;
   left: 0;
 }
 
@@ -69,7 +69,7 @@
   line-height: 1em;
 }
 
-.floating {  
+.floating {
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -81,10 +81,10 @@
 @keyframes floating {
     from { transform: translate(0,  0px); }
     65%  { transform: translate(0, 6px); }
-    to   { transform: translate(0, -0px); }    
+    to   { transform: translate(0, -0px); }
 }
 .btn {
-	margin-top: 5px;
+    margin-top: 5px;
 }
 
 .myFade {
@@ -225,28 +225,28 @@ body {
 }
 
 h1 {
-	font-family: 'Bowlby One SC', cursive;
-	font-size: 30;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 30;
 }
 
 .hide-all {
-	visibility: hidden;
+    visibility: hidden;
 }
 
 .visible {
-	visibility: visible !important;
+    visibility: visible !important;
 }
 
 .btn-primary {
-	background-color: #8F3985;
-	border: 2px solid #8F3985;
+    background-color: #8F3985;
+    border: 2px solid #8F3985;
 }
 
 .btn-mybutton {
-	background-color: #8F3985;
-	border: 2px solid #8F3985;
-	width: 400px;
-	margin: auto;
+    background-color: #8F3985;
+    border: 2px solid #8F3985;
+    width: 400px;
+    margin: auto;
 }
 
 .modal-content{
@@ -255,7 +255,7 @@ h1 {
 
 
 .hiddenButton{
-	visibility: hidden;
+    visibility: hidden;
 }
 
 .hidden{
@@ -263,11 +263,11 @@ h1 {
 }
 
 .modal-dialog{
-	text-align:center;
+    text-align:center;
 }
 
 .modal-content{
-	display:inline-block;
+    display:inline-block;
 }
 
 .dynamic-button {
@@ -279,37 +279,37 @@ h1 {
 }
 
 .button-div {
-	height:60vh;
-	padding-left: 5%;
-	padding-right: 5%;
+    height:60vh;
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 
 .btn-wrk {
-	height:100px;
-	text-align: center;
-	vertical-align:middle;
-	border-radius:10px;
+    height:100px;
+    text-align: center;
+    vertical-align:middle;
+    border-radius:10px;
 }
 
 .navbar {
-	background-color: #25283D;
+    background-color: #25283D;
 }
 
 .float-right {
-	margin-right: 2px;
+    margin-right: 2px;
 }
 
 .header-footer {
-	background-color: #edf0f7;
-	color: black;
-	font-size: 20px
+    background-color: #edf0f7;
+    color: black;
+    font-size: 20px
 }
 
 .font-25 {
-	font-size:25px;
+    font-size:25px;
 }
 
 .font-60 {
-	font-size: 60px;
+    font-size: 60px;
 }
